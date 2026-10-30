@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>عفاف | حجابات، خمارات وأسدال</title>
+<meta name="description" content="متجر أنيق للحجابات والخمارات والأسدال بجودة عالية وتوصيل لكل الولايات.">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Amiri:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--c:#b5527a;--c2:#d9a05b;--bg:rgba(253,248,250,.93);--card:#fff;--t:#2b2127;--m:#8a7a83}
+.dark{--bg:rgba(24,17,22,.94);--card:#2a1f26;--t:#f3e9ee;--m:#b8a5af}
+*{box-sizing:border-box;margin:0;font-family:Cairo,Tahoma,sans-serif}
+html{scroll-behavior:smooth}
+body{background:url(a.jpg) center/cover fixed #eadde3;color:var(--t)}
+main,header,footer,.sec{background:var(--bg)}
+.top{background:var(--c);color:#fff;text-align:center;padding:7px;font-size:14px}
+header{position:sticky;top:0;z-index:5;display:flex;gap:8px;align-items:center;padding:10px 16px;backdrop-filter:blur(10px);box-shadow:0 2px 14px #0002}
+.logo{font:700 28px Amiri,serif;color:var(--c);flex:1}
+.ib{background:var(--card);color:var(--t);border:1px solid #b5527a22;padding:8px 13px;border-radius:12px;cursor:pointer;font-size:15px}
+.hero{height:78vh;background:linear-gradient(#0003,#000a),url(0.jpg) center/cover;display:grid;place-content:center;text-align:center;color:#fff;gap:14px;padding:20px}
+.hero h1{font:700 clamp(32px,7vw,64px)/1.3 Amiri,serif}
+.hero p{font-size:18px;opacity:.9}
+.btn{background:linear-gradient(90deg,var(--c),#d06c95);color:#fff;border:0;padding:11px 24px;border-radius:30px;cursor:pointer;font-weight:700;text-decoration:none;display:inline-block;transition:.3s}
+.btn:hover{filter:brightness(1.1);transform:scale(1.03)}
+.sec{padding:30px 16px}.sec>*{max-width:1100px;margin-inline:auto}
+h2.t{text-align:center;font:700 32px Amiri,serif;color:var(--c);margin-bottom:18px}
+.bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.bar input,.bar select,form input,form textarea{flex:1;min-width:140px;padding:11px;border-radius:12px;border:1px solid #8884;background:var(--card);color:var(--t)}
+.cats{display:flex;gap:8px;overflow:auto;margin-bottom:16px;padding-bottom:4px}
+.cats button{white-space:nowrap}.cats .on{background:var(--c);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.card{background:var(--card);border-radius:20px;overflow:hidden;box-shadow:0 4px 18px #0002;position:relative;transition:.3s;animation:up .5s both}
+.card:hover{transform:translateY(-6px);box-shadow:0 10px 28px #b5527a44}
+@keyframes up{from{opacity:0;transform:translateY(20px)}}
+.card img{width:100%;height:270px;object-fit:cover;cursor:pointer;background:#8883;transition:.4s}
+.card:hover img{transform:scale(1.04)}.card .im{overflow:hidden}
+.i{padding:13px;display:grid;gap:7px}
+.p{color:var(--c);font-weight:800;font-size:18px}.old{color:var(--m);text-decoration:line-through;font-size:13px;margin-inline-start:6px}
+.tag{position:absolute;top:10px;right:10px;background:var(--c2);color:#fff;padding:3px 11px;border-radius:20px;font-size:12px;z-index:1}
+.heart{position:absolute;top:8px;left:8px;background:#fffd;border:0;border-radius:50%;width:36px;height:36px;cursor:pointer;font-size:17px;z-index:1}
+.sw{display:flex;gap:6px;flex-wrap:wrap}
+.sw span{width:22px;height:22px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #8886;cursor:pointer}
+.sw .on{box-shadow:0 0 0 2px var(--c)}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;text-align:center}
+.feat div,.rev div{background:var(--card);padding:20px;border-radius:18px;font-size:15px}
+.feat b{font-size:32px;display:block}
+.rev{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.rev small{color:var(--m)}
+details{background:var(--card);border-radius:14px;padding:13px 16px;margin-bottom:8px}summary{cursor:pointer;font-weight:700}
+footer{text-align:center;padding:26px;color:var(--m)}
+.panel{position:fixed;inset:0 auto 0 0;width:min(390px,100%);background:var(--card);padding:16px;transform:translateX(-105%);transition:.35s;display:flex;flex-direction:column;gap:10px;z-index:10;box-shadow:4px 0 22px #0006}
+.panel.open{transform:none}
+#items,#favs{flex:1;overflow:auto}
+.row{display:flex;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid #8883}
+.row img{width:58px;height:58px;border-radius:12px;object-fit:cover}.row span{flex:1;font-size:14px}
+.q button{width:26px;height:26px;border-radius:50%;border:0;background:var(--c);color:#fff;cursor:pointer}
+form{display:grid;gap:8px}
+.free{background:#b5527a18;border-radius:10px;padding:7px 10px;font-size:13px;text-align:center}
+#modal{position:fixed;inset:0;background:#000b;display:none;place-items:center;z-index:20;padding:16px}
+#modal.open{display:grid}
+#modal .box{background:var(--card);border-radius:22px;max-width:430px;width:100%;overflow:hidden;max-height:94vh;overflow-y:auto}
+#modal img{width:100%;max-height:52vh;object-fit:cover}
+#toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,100px);background:#2b2127;color:#fff;padding:11px 22px;border-radius:30px;transition:.4s;z-index:30}
+#toast.show{transform:translate(-50%,0)}
+</style>
+</head>
+<body>
+<div class="top">🚚 توصيل لكل الولايات • الدفع عند الاستلام • جودة مضمونة</div>
+<header>
+  <div class="logo">عفاف ✨</div>
+  <button class="ib" onclick="toggleDark()">🌓</button>
+  <button class="ib" onclick="openP('fav')">❤️ <span id="fn">0</span></button>
+  <button class="ib" onclick="openP('cart')">🛒 <span id="n">0</span></button>
+</header>
+
+<section class="hero">
+  <h1>أناقة الحشمة... بلمسة عصرية</h1>
+  <p>حجابات • خمارات • أسدال بأجود الأقمشة وأرقى التصاميم</p>
+  <div><a class="btn" href="#shop">تسوقي الآن</a></div>
+</section>
+
+<section class="sec" id="shop">
+  <h2 class="t">مجموعتنا</h2>
+  <div class="bar">
+    <input id="q" placeholder="🔍 ابحثي عن منتج..." oninput="render()">
+    <select id="sort" onchange="render()">
+      <option value="">الترتيب</option><option value="a">الأرخص</option><option value="d">الأغلى</option>
+    </select>
+  </div>
+  <div class="cats" id="cats"></div>
+  <div class="grid" id="list"></div>
+</section>
+
+<section class="sec">
+  <h2 class="t">لماذا عفاف؟</h2>
+  <div class="feat">
+    <div><b>🧵</b>أقمشة فاخرة<br><small>ناعمة، مريحة وتدوم طويلاً</small></div>
+    <div><b>🚚</b>توصيل سريع<br><small>إلى كل الولايات</small></div>
+    <div><b>💳</b>الدفع عند الاستلام<br><small>تستلمين وتدفعين</small></div>
+    <div><b>🔄</b>تبديل سهل<br><small>في حال عدم المطابقة</small></div>
+  </div>
+</section>
+
+<section class="sec">
+  <h2 class="t">آراء زبوناتنا</h2>
+  <div class="rev">
+    <div>⭐⭐⭐⭐⭐<p>القماش رائع وراقي، والتوصيل كان سريع. أكيد نعاود الطلب!</p><small>— سارة، الجزائر</small></div>
+    <div>⭐⭐⭐⭐⭐<p>الإسدال مريح بزاف وألوانه كيما في الصور بالضبط.</p><small>— أمينة، وهران</small></div>
+    <div>⭐⭐⭐⭐⭐<p>الخمار خفيف وما يتحركش، جودة فوق التوقعات.</p><small>— ريم، قسنطينة</small></div>
+  </div>
+</section>
+
+<section class="sec">
+  <h2 class="t">أسئلة شائعة</h2>
+  <details><summary>كيفاش نطلب؟</summary><p>اختاري المنتج واللون، أضيفيه للسلة، واملئي معلوماتك ثم أكدي الطلب.</p></details>
+  <details><summary>واش الدفع عند الاستلام؟</summary><p>نعم، تدفعين عند استلام طلبك.</p></details>
+  <details><summary>كم يستغرق التوصيل؟</summary><p>من 2 إلى 5 أيام حسب الولاية.</p></details>
+</section>
+
+<footer>© 2026 عفاف — جميع الحقوق محفوظة 🤍</footer>
+
+<aside class="panel" id="cart">
+  <button class="ib" onclick="closeP()">✕ إغلاق</button>
+  <h3>🛒 سلتك</h3><div id="items"></div>
+  <div class="free" id="free"></div>
+  <b>المجموع: <span id="total">0</span> دج</b>
+  <form onsubmit="order(event)">
+    <input id="nm" placeholder="الاسم الكامل" required>
+    <input id="ph" placeholder="رقم الهاتف" type="tel" required>
+    <input id="ad" placeholder="الولاية / العنوان" required>
+    <button class="btn">تأكيد الطلب ✅</button>
+  </form>
+</aside>
+<aside class="panel" id="fav">
+  <button class="ib" onclick="closeP()">✕ إغلاق</button>
+  <h3>❤️ المفضلة</h3><div id="favs"></div>
+</aside>
+
+<div id="modal" onclick="if(event.target==this)this.classList.remove('open')"><div class="box" id="mb"></div></div>
+<div id="toast"></div>
+
+<script>
+/* ===== إعدادات التواصل: نكملوها مبعد ===== */
+const CONTACT = { type: "", value: "" };   // مثال: {type:"whatsapp", value:"رقمك"}
+const FREE_SHIP = 6000;                    // الشحن مجاني من هذا المبلغ
+
+/* الصورة رقم id = id.jpg  (1.jpg, 2.jpg, ...) */
+const products = [
+  {id:1, name:"حجاب شيفون ملكي",     cat:"حجابات", price:1500, old:2000, colors:["#b5527a","#2b2b2b","#d9c4a8","#5a7d6b"], desc:"شيفون ناعم وخفيف، سهل اللف ولا يحتاج كي."},
+  {id:2, name:"حجاب جيرسي مريح",     cat:"حجابات", price:1200, colors:["#2b2b2b","#8a6d5a","#6c7a9c"], desc:"قماش جيرسي مرن يناسب الاستعمال اليومي."},
+  {id:3, name:"خمار كريب طويل",      cat:"خمارات", price:2800, old:3500, colors:["#2b2b2b","#4a3b52","#7d5a5a"], desc:"خمار طويل يغطي بإحكام، بقماش كريب راقٍ."},
+  {id:4, name:"خمار بقبعة جاهز",     cat:"خمارات", price:2400, colors:["#2b2b2b","#b5a38c"], desc:"جاهز للارتداء بدون دبابيس، عملي وأنيق."},
+  {id:5, name:"إسدال صلاة فاخر",     cat:"أسدال",  price:4500, old:5500, colors:["#fff","#d8c6d0","#b9c9d6"], desc:"إسدال واسع من قطعتين بقماش قطني ناعم."},
+  {id:6, name:"إسدال مطرز",          cat:"أسدال",  price:5200, colors:["#fff","#c9b8a6"], desc:"تطريز يدوي أنيق على الأطراف، مثالي للمناسبات."},
+];
+const $ = id => document.getElementById(id), LS = (k,d) => JSON.parse(localStorage[k] || d);
+let basket = LS("basket","{}"), favs = LS("favs","[]"), cat = "الكل", pick = {};
+const byId = id => products.find(p => p.id == id);
+const dot = (c,id,i) => `<span style="background:${c}" class="${(pick[id]??0)==i?'on':''}" onclick="pick[${id}]=${i};render();view(${id},1)"></span>`;
+
+function render(){
+  const cats = ["الكل", ...new Set(products.map(p => p.cat))];
+  $("cats").innerHTML = cats.map(c => `<button class="ib ${c==cat?'on':''}" onclick="cat='${c}';render()">${c}</button>`).join("");
+  let l = products.filter(p => (cat=="الكل"||p.cat==cat) && p.name.includes($("q").value.trim()));
+  if($("sort").value) l.sort((a,b) => $("sort").value=="a" ? a.price-b.price : b.price-a.price);
+  $("list").innerHTML = l.map(p => `
+    <div class="card">
+      ${p.old?`<span class="tag">-${Math.round(100-p.price/p.old*100)}%</span>`:""}
+      <button class="heart" onclick="fav(${p.id})">${favs.includes(p.id)?"❤️":"🤍"}</button>
+      <div class="im"><img src="${p.id}.jpg" alt="${p.name}" loading="lazy" onclick="view(${p.id})"></div>
+      <div class="i"><b>${p.name}</b><small style="color:var(--m)">${p.cat}</small>
+        <div><span class="p">${p.price} دج</span>${p.old?`<span class="old">${p.old}</span>`:""}</div>
+        <button class="btn" onclick="view(${p.id})">اختيار اللون والطلب</button></div></div>`).join("") || "<p>لا توجد نتائج 😕</p>";
+  $("fn").textContent = favs.length;
+}
+function view(id,keep){const p=byId(id), i=pick[id]??0;
+  $("mb").innerHTML = `<img src="${id}.jpg"><div class="i"><h3>${p.name}</h3><p>${p.desc}</p>
+    <div class="sw">${p.colors.map((c,k)=>dot(c,id,k)).join("")}</div>
+    <b class="p">${p.price} دج</b><button class="btn" onclick="add(${id});$('modal').classList.remove('open')">أضيفي للسلة 🛒</button></div>`;
+  $("modal").classList.add("open");}
+function fav(id){favs = favs.includes(id) ? favs.filter(x=>x!=id) : [...favs,id]; save(); render(); drawFav();}
+function add(id){const k=id+"|"+(pick[id]??0); basket[k]=(basket[k]||0)+1; save(); draw(); toast("تمت الإضافة للسلة ✅");}
+function chg(k,d){basket[k]+=d; if(basket[k]<=0) delete basket[k]; save(); draw();}
+function save(){localStorage.basket=JSON.stringify(basket); localStorage.favs=JSON.stringify(favs);}
+
+function draw(){
+  let t=0,n=0;
+  $("items").innerHTML = Object.entries(basket).map(([k,q])=>{const [id,ci]=k.split("|"), p=byId(id); t+=p.price*q; n+=q;
+    return `<div class="row"><img src="${id}.jpg"><span>${p.name}<br><small><i style="background:${p.colors[ci]};display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:middle"></i> ${p.price*q} دج</small></span>
+      <div class="q"><button onclick="chg('${k}',1)">+</button> ${q} <button onclick="chg('${k}',-1)">−</button></div></div>`}).join("") || "السلة فارغة";
+  $("total").textContent=t; $("n").textContent=n;
+  $("free").textContent = t>=FREE_SHIP ? "🎉 توصيل مجاني لطلبك!" : `أضيفي ${FREE_SHIP-t} دج للحصول على توصيل مجاني`;
+}
+function drawFav(){$("favs").innerHTML = favs.map(id=>`<div class="row"><img src="${id}.jpg"><span>${byId(id).name}</span>
+  <button class="ib" onclick="view(${id});closeP()">عرض</button></div>`).join("") || "لا توجد مفضلات";}
+
+function order(e){e.preventDefault();
+  if(!Object.keys(basket).length) return toast("السلة فارغة!");
+  const lines = Object.entries(basket).map(([k,q])=>{const [id,ci]=k.split("|"); return `• ${byId(id).name} (لون ${+ci+1}) × ${q}`}).join("\n");
+  const msg = `طلب جديد 🛍️\n${lines}\nالمجموع: ${$("total").textContent} دج\n\nالاسم: ${$("nm").value}\nالهاتف: ${$("ph").value}\nالعنوان: ${$("ad").value}`;
+  const u = encodeURIComponent(msg), {type,value} = CONTACT;
+  if(type=="whatsapp") open(`https://wa.me/${value}?text=${u}`);
+  else if(type=="telegram") open(`https://t.me/${value}?text=${u}`);
+  else if(type=="email") open(`mailto:${value}?subject=طلب جديد&body=${u}`);
+  else { navigator.clipboard?.writeText(msg); toast("طريقة الاستلام لم تُفعّل بعد (تم نسخ الطلب)"); }
+}
+function openP(id){closeP(); $(id).classList.add("open");}
+function closeP(){document.querySelectorAll(".panel").forEach(p=>p.classList.remove("open"));}
+function toast(m){const t=$("toast"); t.textContent=m; t.classList.add("show"); setTimeout(()=>t.classList.remove("show"),2000);}
+function toggleDark(){document.body.classList.toggle("dark"); localStorage.dark = document.body.classList.contains("dark")?1:"";}
+if(localStorage.dark) document.body.classList.add("dark");
+render(); draw(); drawFav();
+</script>
+</body>
+</html>
