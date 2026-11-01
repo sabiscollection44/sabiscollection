@@ -282,180 +282,25 @@
     "XL",
     "XXL"
    ],
-   "badge": "",
+   "badge": "جديد",
    "soldout": false,
    "id": 1,
-   "name": "كاغديغو",
-   "cat": "حجابات",
-   "price": 4500,
-   "old": 2000,
+   "name": "Cardigan",
+   "cat": "Vestes",
+   "price": 3500,
+   "old": 0,
    "colors": [
     {
-     "name": "وردي غامق",
-     "img": ""
+     "name": "Vert olive",
+     "img": "img/p1-c0-1793567497570.jpg"
     },
     {
-     "name": "أسود",
-     "img": ""
-    },
-    {
-     "name": "بيج",
-     "img": ""
-    },
-    {
-     "name": "رمادي",
-     "img": ""
+     "name": "Blanc cassé",
+     "img": "img/p1-c1-1793567530562.jpg"
     }
    ],
-   "desc": "",
+   "desc": "Cardigan",
    "img": ""
-  },
-  {
-   "show": true,
-   "sizes": [],
-   "badge": "",
-   "soldout": false,
-   "id": 2,
-   "name": "حجاب جيرسي مريح",
-   "cat": "حجابات",
-   "price": 1200,
-   "colors": [
-    {
-     "name": "أسود",
-     "img": ""
-    },
-    {
-     "name": "رمادي",
-     "img": ""
-    },
-    {
-     "name": "رمادي",
-     "img": ""
-    }
-   ],
-   "desc": "قماش جيرسي مرن يناسب الاستعمال اليومي.",
-   "img": "",
-   "old": 0
-  },
-  {
-   "show": true,
-   "sizes": [
-    "M",
-    "L",
-    "XL"
-   ],
-   "badge": "",
-   "soldout": false,
-   "id": 3,
-   "name": "خمار كريب طويل",
-   "cat": "خمارات",
-   "price": 2800,
-   "old": 3500,
-   "colors": [
-    {
-     "name": "أسود",
-     "img": ""
-    },
-    {
-     "name": "أخضر",
-     "img": ""
-    },
-    {
-     "name": "بني",
-     "img": ""
-    }
-   ],
-   "desc": "خمار طويل يغطي بإحكام، بقماش كريب راقٍ.",
-   "img": ""
-  },
-  {
-   "show": true,
-   "sizes": [
-    "M",
-    "L",
-    "XL"
-   ],
-   "badge": "",
-   "soldout": false,
-   "id": 4,
-   "name": "خمار بقبعة جاهز",
-   "cat": "خمارات",
-   "price": 2400,
-   "colors": [
-    {
-     "name": "أسود",
-     "img": ""
-    },
-    {
-     "name": "بيج",
-     "img": ""
-    }
-   ],
-   "desc": "جاهز للارتداء بدون دبابيس، عملي وأنيق.",
-   "img": "",
-   "old": 0
-  },
-  {
-   "show": true,
-   "sizes": [
-    "S",
-    "M",
-    "L",
-    "XL",
-    "XXL"
-   ],
-   "badge": "",
-   "soldout": false,
-   "id": 5,
-   "name": "إسدال صلاة فاخر",
-   "cat": "أسدال",
-   "price": 4500,
-   "old": 5500,
-   "colors": [
-    {
-     "name": "#fff",
-     "img": ""
-    },
-    {
-     "name": "بيج",
-     "img": ""
-    },
-    {
-     "name": "سماوي",
-     "img": ""
-    }
-   ],
-   "desc": "إسدال واسع من قطعتين بقماش قطني ناعم.",
-   "img": ""
-  },
-  {
-   "show": true,
-   "sizes": [
-    "S",
-    "M",
-    "L",
-    "XL",
-    "XXL"
-   ],
-   "badge": "",
-   "soldout": false,
-   "id": 6,
-   "name": "إسدال مطرز",
-   "cat": "أسدال",
-   "price": 5200,
-   "colors": [
-    {
-     "name": "#fff",
-     "img": ""
-    },
-    {
-     "name": "بيج",
-     "img": ""
-    }
-   ],
-   "desc": "تطريز يدوي أنيق على الأطراف، مثالي للمناسبات.",
-   "img": "",
-   "old": 0
   }
  ]
 }
