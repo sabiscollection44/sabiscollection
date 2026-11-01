@@ -1,12 +1,12 @@
 {
  "settings": {
   "brand": "sabi's collection",
-  "heroTitle": "أناقة الحشمة... بلمسة عصرية",
-  "heroSub": "حجابات • خمارات • أسدال بأجود الأقمشة وأرقى التصاميم",
+  "heroTitle": "عالم الستر و الأناقة ",
+  "heroSub": "حجابات • خمارات • عباءات . أونسومبل ",
   "heroBtn": "تسوقي الآن",
-  "shopTitle": "مجموعتنا",
-  "color": "#3c071b",
-  "color2": "#f9d3e0",
+  "shopTitle": "منتجاتنا",
+  "color": "#b5527a",
+  "color2": "#d9a05b",
   "ver": 0,
   "ann": "",
   "freeShip": 600,
@@ -67,7 +67,7 @@
     }
    ]
   },
-  "footer": "© 2026 {brand} — جميع الحقوق محفوظة 🤍",
+  "footer": "©sabi.s_collection جميع الحقوق محفوظة 🤍",
   "social": {
    "whatsapp": "",
    "instagram": "",
