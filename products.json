@@ -7,7 +7,7 @@
   "shopTitle": "منتجاتنا",
   "color": "#3c071b",
   "color2": "#f9d3e0",
-  "ver": 1793628175194,
+  "ver": 1793628693740,
   "ann": "",
   "freeShip": 12000,
   "homePrice": 0,
@@ -275,6 +275,15 @@
  },
  "products": [
   {
+   "show": true,
+   "sizes": [
+    "S",
+    "M",
+    "L",
+    "Xl"
+   ],
+   "badge": "جديد",
+   "soldout": false,
    "id": 2,
    "name": "Robe Chanel",
    "cat": "Robes",
@@ -303,16 +312,7 @@
      "name": "Cappuccino ",
      "img": "img/p2-c4-1793628633508.jpg"
     }
-   ],
-   "sizes": [
-    "S",
-    "M",
-    "L",
-    "Xl"
-   ],
-   "badge": "جديد",
-   "soldout": false,
-   "show": true
+   ]
   },
   {
    "show": true,
