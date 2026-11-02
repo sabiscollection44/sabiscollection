@@ -275,6 +275,46 @@
  },
  "products": [
   {
+   "id": 2,
+   "name": "Robe Chanel",
+   "cat": "Robes",
+   "price": 4800,
+   "old": 0,
+   "img": "img/p2-1793628270757.jpg",
+   "desc": "Tissu Chanel ✨",
+   "colors": [
+    {
+     "name": "Noir",
+     "img": "img/p2-c0-1793628397518.jpg"
+    },
+    {
+     "name": "Blanc cassé",
+     "img": "img/p2-c1-1793628446003.jpg"
+    },
+    {
+     "name": "Beige",
+     "img": "img/p2-c2-1793628494010.jpg"
+    },
+    {
+     "name": "Maron",
+     "img": "img/p2-c3-1793628524334.jpg"
+    },
+    {
+     "name": "Cappuccino ",
+     "img": "img/p2-c4-1793628633508.jpg"
+    }
+   ],
+   "sizes": [
+    "S",
+    "M",
+    "L",
+    "Xl"
+   ],
+   "badge": "جديد",
+   "soldout": false,
+   "show": true
+  },
+  {
    "show": true,
    "sizes": [
     "M",
