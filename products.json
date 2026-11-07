@@ -295,8 +295,8 @@
     "p": 500
    }
   },
-  "orderEmail": "sabiscollection44@gmail.com",
-  "ordersUrl": "",
+  "orderEmail": "",
+  "ordersUrl": "https://script.google.com/macros/s/AKfycbxeaTDaaQ591Q8rLT_EwsUQyxt03HxjIevADpcLe4V9QcEJ7buQKEysDQJ1lvNj1TubmQ/exec",
   "features": {
    "show": true,
    "title": "لماذا {Sabi’s collection }؟",
